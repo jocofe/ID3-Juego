@@ -133,6 +133,11 @@ button.cta-close {
     letter-spacing: 10px;
 }
 
+button.cta-close:hover {
+    background: red;
+    color: #171717;
+}
+
 .close-btn {
     margin-left: 100px;
     margin-top: 25px;
@@ -165,7 +170,7 @@ p.counter {
 
 .all-squares {
     width: 100%;
-    height: 70%;
+    height: 75vh;
 }
 
 .square1 {
