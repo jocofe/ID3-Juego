@@ -8,24 +8,25 @@ const fadeIn = (el) => {
 
 const gameClasification = [
     {position: '1', name: 'Paquito', points: '50 puntos'},
-    {position: '2', name: 'Marisa', points: '45 puntos'}
+    {position: '2', name: 'Marisa', points: '45 puntos'},
     {position: '3', name: 'Alberto', points: '43 puntos'},
-    {position: '4', name: 'Carlos', points: '40 puntos'}
+    {position: '4', name: 'Carlos', points: '40 puntos'},
     {position: '5', name: 'Laura', points: '37 puntos'},
     {position: '6', name: 'Juanito', points: '35 puntos'}
 ];
 
 const rankingNode = document.querySelector('.ranking');
 
-rankingNode.forEach((positionInfo) => {
-    const pointsLabel = positionInfo.scoring === 1 ? 'punto' : 'puntos';
-
-    rankingHtml += `<div class="ranking__item">
-    <div><strong> ${positionInfo.position}.</strong> ${positionInfo.name}</div>
-    <div>${positionInfo.scoring} ${pointsLabel}</div>
-    </div>`
-    rankingNode.innerHTML = htmlForPosition;
-});
+//Tengo que recordar qué es esto
+//rankingNode.forEach((positionInfo) => {
+//    const pointsLabel = positionInfo.scoring === 1 ? 'punto' : 'puntos';
+//
+//    rankingHtml += `<div class="ranking__item">
+//    <div><strong> ${positionInfo.position}.</strong> ${positionInfo.name}</div>
+//    <div>${positionInfo.scoring} ${pointsLabel}</div>
+//    </div>`
+//    rankingNode.innerHTML = htmlForPosition;
+//});
 
 function startGame() {
     const availableClasses = [
