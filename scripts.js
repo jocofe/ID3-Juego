@@ -17,17 +17,6 @@ const gameClasification = [
 
 const rankingNode = document.querySelector('.ranking');
 
-//Tengo que recordar qué es esto
-//rankingNode.forEach((positionInfo) => {
-//    const pointsLabel = positionInfo.scoring === 1 ? 'punto' : 'puntos';
-//
-//    rankingHtml += `<div class="ranking__item">
-//    <div><strong> ${positionInfo.position}.</strong> ${positionInfo.name}</div>
-//    <div>${positionInfo.scoring} ${pointsLabel}</div>
-//    </div>`
-//    rankingNode.innerHTML = htmlForPosition;
-//});
-
 function startGame() {
     const availableClasses = [
         'redsquare--1',
@@ -128,3 +117,19 @@ closeBtn.addEventListener('click', () => {
         element3.style.opacity = 1;
     }, 1000);
 });
+
+//Añadir local para sacar mismo nombre si refrescas 
+//localStorage.setItem('playerName', usernameInputNode.value);
+//usernameInputNode.value = localStorage.getItem('playername');
+//ctaButtonNode.disabled = !usernameInputNode.value;
+
+//Tengo que recordar qué es esto
+//rankingNode.forEach((positionInfo) => {
+//    const pointsLabel = positionInfo.scoring === 1 ? 'punto' : 'puntos';
+//
+//    rankingHtml += `<div class="ranking__item">
+//    <div><strong> ${positionInfo.position}.</strong> ${positionInfo.name}</div>
+//    <div>${positionInfo.scoring} ${pointsLabel}</div>
+//    </div>`
+//    rankingNode.innerHTML = htmlForPosition;
+//});   
