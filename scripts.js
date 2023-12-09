@@ -87,7 +87,7 @@ myButton.addEventListener("click", () => {
     let element2 = document.querySelector('.allcontent');
     element2.style.opacity = 0;
     setTimeout(() => {
-        let element3 = document.querySelector('#flow');
+        let element3 = document.querySelector('#start');
         element3.style.width = 0;
 
         if (gameInterval) {
@@ -107,7 +107,7 @@ closeBtn.addEventListener('click', () => {
     }, 1000);
     
     setTimeout(() => {
-        let element2 = document.querySelector('#flow');
+        let element2 = document.querySelector('#start');
     element2.style.width = '100%';
     }, 500);
     
