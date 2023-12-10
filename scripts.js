@@ -80,11 +80,11 @@ function startGame() {
     return setInterval(pickRedsquare, 1000);
 }
 
-const myButton = document.querySelector('.cta-start');
+const myButton = document.querySelector('.sct-content__btn--bgred');
 let gameInterval;
 
 myButton.addEventListener("click", () => {
-    let element2 = document.querySelector('.allcontent');
+    let element2 = document.querySelector('.content-wrapper');
     element2.style.opacity = 0;
     setTimeout(() => {
         let element3 = document.querySelector('#start');
@@ -112,7 +112,7 @@ closeBtn.addEventListener('click', () => {
     }, 500);
     
     setTimeout(() => {
-        let element3 = document.querySelector('.allcontent');
+        let element3 = document.querySelector('.content-wrapper');
         element3.style.transition = 'all 1s ease-in-out;'
         element3.style.opacity = 1;
     }, 1000);

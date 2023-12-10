@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-<body class="content" onload="fadeIn('.allcontent');">
-    <div id="class">
+<body class="content" onload="fadeIn('.content-wrapper');">
+    <div id="classification">
         <div class="sct-content--red">
             <h2 class="sct-content__title">Classification</h2>
             <span class="sct-content__line"></span>
@@ -20,36 +20,20 @@
         </div>
     </div>
     <div id="start">
-        <div class="allcontent">
-            <div class="button-wrapper--class">
-                <div class="line-btn">
-                    <button class="cta-classification">Classification</button>
-                </div>
-            </div>
-            <section class="text-section">
-                <div class="section-wrapper">
-                    <div class="hero">
-                        <div class="line-hero">
-                            <h1><span>Red</span> Squares Game</h1>
-                        </div>
-                        <div class="line-hero">
-                            <h2>They're fast as f**k</h2>
-                        </div>
-                        <div class="line-hero">
-                            <p>Try hit all the red squares</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="content-wrapper">
+            <section class="sct-content--flexend">
+                <button class="sct-content__btn">Classification</button>
             </section>
-            <section class="button-section">
-                <div class="button-wrapper">
-                    <div class="line-btn">
-                        <button class="cta-start">start</button>
-                    </div>
-                </div>
+            <section class="sct-content">
+                <h1><span>Red</span> Squares Game</h1>
+                <h2>They're fast as f**k</h2>
+                <p>Try hit all the red squares</p>
+            </section>
+            <section class="sct-content">
+                <button class="sct-content__btn--bgred">start</button>
             </section>
             <footer class="footer-main">
-                <div class="author">
+                <div class="footer-main__author">
                     <h3>José Codoñer 2023 ©</h3>
                 </div>
             </footer>
@@ -59,7 +43,7 @@
         <div class="close-btn">
             <button class="cta-close">Close</button>
         </div>
-        <div class="all-squares">
+        <div class="sct-content--bgblack">
             <div class="redsquare"></div>
             <div class="redsquare"></div>
             <div class="redsquare"></div>
@@ -71,7 +55,6 @@
         </div>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
 <script src="./scripts.js"></script>
 </html>
 

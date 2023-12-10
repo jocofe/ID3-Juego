@@ -1,5 +1,11 @@
 /* || GENERAL SETTINGS */
 
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 h1 {
   color: #171717; 
   font-family: Baskervville;
@@ -69,7 +75,7 @@ span {
   height: 100%;
 }
 
-/* || GAME SLIDES */
+/* || SECTION BLOCKS */
 
 .modal-classification {
   width: 100%;
@@ -77,7 +83,7 @@ span {
   background-color: red;
 }
 
-.allcontent{
+.content-wrapper{
   opacity: 0;
   margin-top: 25px;
   transition: all 0.70s ease-in-out;
@@ -112,7 +118,7 @@ footer {
   align-items: center;
 }
 
-.line-btn {
+.btn--underline {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,10 +220,12 @@ p.counter {
   padding: 0.5em;
 }
 
-.all-squares {
+.sct-content--bgblack {
   width: 100%;
   height: 75vh;
 }
+
+/* || GAME ELEMENTS */
 
 .redsquare {
   width: fit-content;
