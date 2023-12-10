@@ -12,7 +12,6 @@ h1 {
   font-size: 84px;
   font-weight: 400;
   margin: 0;
-  text-align: center;
 }
 
 h2 {
@@ -21,7 +20,6 @@ h2 {
   font-size: 84px;
   font-weight: 400;
   margin: 0;
-  text-align: center;
 }
 
 p {
@@ -30,7 +28,6 @@ p {
   font-size: 84px;
   font-weight: 400;
   margin: 0;
-  text-align: center;
 }
 
 span {
@@ -77,17 +74,22 @@ span {
 
 /* || SECTION BLOCKS */
 
-.modal-classification {
-  width: 100%;
-  height: 100%;
-  background-color: red;
-}
-
 .content-wrapper{
   opacity: 0;
   margin-top: 25px;
   transition: all 0.70s ease-in-out;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal-classification {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
 
 footer {
@@ -95,27 +97,6 @@ footer {
   justify-content: center;
   width: 100%;
   flex-direction: row;
-}
-
-.section-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.line-hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.text-section {
-  margin-top: 15em;
-}
-
-.button-section{
-  display:flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .btn--underline {
@@ -177,7 +158,7 @@ button:hover {
   cursor: pointer;
 }
 
-button.cta-close {
+button.sct-content__btn--bgblack {
   border: none;
   outline: none;
   background: none;
@@ -191,12 +172,12 @@ button.cta-close {
   letter-spacing: 10px;
 }
 
-button.cta-close:hover {
+button.sct-content__btn--bgblack:hover {
   background: red;
   color: #171717;
 }
 
-.close-btn {
+.sct-content__btn--bgblack {
   margin-left: 100px;
   margin-top: 25px;
   justify-content: flex-end;
@@ -204,10 +185,7 @@ button.cta-close:hover {
   margin-right: 100px;
 }
 
-.red-square {
-  background-color: red;
-  position: absolute;
-}
+
 
 p.counter {
   color: white;

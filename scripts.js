@@ -98,7 +98,7 @@ myButton.addEventListener("click", () => {
     }, 700);
 });
 
-const closeBtn = document.querySelector('.cta-close');
+const closeBtn = document.querySelector('.sct-content__btn--bgblack');
 closeBtn.addEventListener('click', () => {
     setTimeout(() => {
         clearInterval(gameInterval);
